@@ -1,0 +1,73 @@
+StudentHub Portal
+│
+├── Home
+│
+├── Login
+│   ├── Email / Username
+│   ├── Password
+│   ├── Forgot Password
+│   └── Login Button
+│
+├── Register
+│   ├── Full Name
+│   ├── Email Address
+│   ├── Mobile Number
+│   ├── Gender
+│   ├── Password
+│   ├── Confirm Password
+│   ├── Register Button
+│
+├── Dashboard
+│   ├── Search Bar
+│   ├── Upcoming Test
+│   ├── Assignment Overview
+│   ├── Attendance Summary
+│   ├── Course Overview
+│   └── Notifications
+│
+├── Profile
+│   ├── Student Photo
+│   ├── Student ID
+│   ├── Full Name
+│   ├── Department
+│   ├── Semester
+│   ├── Email
+│   ├── Mobile Number
+│   └── Edit Profile
+│
+├── Courses
+│   ├── Course List
+│   ├── Course Code
+│   ├── Course Name
+│   ├── Faculty Name
+│   ├── Course Material
+│   └── Course Details
+│
+├── Assignments
+│   ├── Assignment List
+│   ├── Pending Assignments
+│   ├── Submitted Assignments
+│   ├── Due Date
+│   ├── Upload Assignment
+│   └── Assignment Status
+│
+├── Attendance
+│   ├── Overall Attendance
+│   ├── Subject-wise Attendance
+│   ├── Monthly Attendance
+│   ├── Attendance Percentage
+│   └── Attendance Report
+│
+├── Results
+│   ├── Semester Results
+│   ├── Subject Marks
+│   ├── SGPA
+│   ├── CGPA
+│   ├── Grade
+│   └── Download Result
+│
+├── Contact
+│   ├── Email
+│   ├── Message
+│   ├── College Address
+│   ├── Phone Number

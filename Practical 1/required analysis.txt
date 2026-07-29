@@ -1,0 +1,9 @@
+create new account page
+login page
+dashboard
+profile
+course
+assigement detail
+attendance
+result detail page
+contact
