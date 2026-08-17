@@ -1,0 +1,626 @@
+/* =========================================
+   STUDENTHUB REGISTER PAGE
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #C9E4CA,
+        #87BBA2
+    );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #364958;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.container {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+
+    background: transparent;
+}
+
+
+/* =========================================
+   REGISTER BOX
+========================================= */
+
+.register-box {
+
+    width: 900px;
+
+    padding: 50px;
+
+    background: #FFFFFF;
+
+    border: 2px solid #87BBA2;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 40px rgba(54, 73, 88, 0.18);
+
+    transition:
+        background 0.3s ease,
+        border 0.3s ease;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.register-box h1 {
+
+    text-align: center;
+
+    font-size: 36px;
+
+    margin-bottom: 40px;
+
+    color: #364958;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.form-group {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   FIELD
+========================================= */
+
+.field {
+
+    width: 340px;
+
+    position: relative;
+}
+
+
+/* =========================================
+   INPUT + SELECT
+========================================= */
+
+.field input,
+.field select {
+
+    width: 340px;
+
+    height: 55px;
+
+    padding: 0 18px;
+
+    border: 2px solid #87BBA2;
+
+    border-radius: 12px;
+
+    background: #F7FBF8;
+
+    color: #364958;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+.field input::placeholder {
+
+    color: #55828B;
+}
+
+
+/* =========================================
+   FOCUS
+========================================= */
+
+.field input:focus,
+.field select:focus {
+
+    border-color: #55828B;
+
+    background: #FFFFFF;
+
+    box-shadow:
+        0 0 8px rgba(85, 130, 139, 0.25);
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.field input:hover,
+.field select:hover {
+
+    border-color: #55828B;
+}
+
+
+/* =========================================
+   PASSWORD BOX
+========================================= */
+
+.password-box {
+
+    position: relative;
+
+    width: 340px;
+}
+
+
+/* =========================================
+   PASSWORD INPUT
+========================================= */
+
+.password-box input {
+
+    width: 340px !important;
+
+    padding-right: 50px !important;
+}
+
+
+/* =========================================
+   EYE BUTTON
+========================================= */
+
+.eye-button {
+
+    position: absolute;
+
+    right: 12px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: none;
+
+    background: transparent;
+
+    color: #55828B;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    padding: 5px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* =========================================
+   EYE HOVER
+========================================= */
+
+.eye-button:hover {
+
+    color: #364958;
+
+    transform: translateY(-50%);
+}
+
+
+/* =========================================
+   ERROR MESSAGE
+========================================= */
+
+.field span {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 12px;
+
+    color: #C0392B;
+}
+
+
+/* =========================================
+   REGISTER BUTTON
+========================================= */
+
+.button-box {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+
+#registerButton {
+
+    width: 260px;
+
+    height: 55px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #55828B;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* =========================================
+   REGISTER BUTTON HOVER
+========================================= */
+
+#registerButton:hover {
+
+    background: #3B6064;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   THEME BUTTON
+   TOP RIGHT SIDE
+========================================= */
+
+.theme-button {
+
+    position: fixed;
+
+    top: 20px;
+
+    right: 25px;
+
+    width: 48px;
+
+    height: 48px;
+
+    border: 2px solid #87BBA2;
+
+    border-radius: 50%;
+
+    background: #55828B;
+
+    color: white;
+
+    font-size: 21px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 9999;
+
+    box-shadow:
+        0 4px 12px rgba(54, 73, 88, 0.25);
+
+    transition: 0.3s;
+}
+
+
+/* Theme button hover */
+
+.theme-button:hover {
+
+    background: #3B6064;
+
+    transform: scale(1.08);
+}
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+body.dark-mode {
+
+    background: linear-gradient(
+        135deg,
+        #1E3028,
+        #29483B
+    );
+
+    color: #E8F5EC;
+}
+
+
+/* Register box dark */
+
+body.dark-mode .register-box {
+
+    background: #263F34;
+
+    border-color: #55828B;
+}
+
+
+/* Heading dark */
+
+body.dark-mode .register-box h1 {
+
+    color: #E8F5EC;
+}
+
+
+/* Inputs dark */
+
+body.dark-mode .field input,
+body.dark-mode .field select {
+
+    background: #304D40;
+
+    color: #E8F5EC;
+
+    border-color: #87BBA2;
+}
+
+
+/* Placeholder dark */
+
+body.dark-mode .field input::placeholder {
+
+    color: #B8D3C3;
+}
+
+
+/* Input focus dark */
+
+body.dark-mode .field input:focus,
+body.dark-mode .field select:focus {
+
+    background: #29483B;
+
+    border-color: #C9E4CA;
+}
+
+
+/* Eye dark */
+
+body.dark-mode .eye-button {
+
+    color: #C9E4CA;
+}
+
+
+/* Register button dark */
+
+body.dark-mode #registerButton {
+
+    background: #55828B;
+}
+
+
+/* Register hover dark */
+
+body.dark-mode #registerButton:hover {
+
+    background: #87BBA2;
+
+    color: #1E3028;
+}
+
+
+/* Theme button dark */
+
+body.dark-mode .theme-button {
+
+    background: #87BBA2;
+
+    color: #1E3028;
+
+    border-color: #C9E4CA;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+    .register-box {
+
+        width: 90%;
+
+        padding: 40px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    body {
+
+        align-items: flex-start;
+
+        padding-top: 80px;
+    }
+
+
+    .container {
+
+        padding: 20px;
+    }
+
+
+    .register-box {
+
+        width: 95%;
+
+        padding: 30px 20px;
+    }
+
+
+    .register-box h1 {
+
+        font-size: 28px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .form-group {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 20px;
+    }
+
+
+    .field,
+    .password-box {
+
+        width: 100%;
+
+        max-width: 340px;
+    }
+
+
+    .field input,
+    .field select,
+    .password-box input {
+
+        width: 100% !important;
+    }
+
+
+    #registerButton {
+
+        width: 230px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .theme-button {
+
+        top: 15px;
+
+        right: 15px;
+
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 18px;
+    }
+
+
+    .register-box {
+
+        padding: 25px 15px;
+    }
+
+
+    .register-box h1 {
+
+        font-size: 25px;
+    }
+
+
+    .field input,
+    .field select,
+    .password-box input {
+
+        height: 50px;
+
+        font-size: 14px;
+    }
+
+
+    #registerButton {
+
+        width: 210px;
+
+        height: 50px;
+    }
+
+}
